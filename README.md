@@ -1,2 +1,2 @@
 # to-do-list
-I have not implemented the functionality for edit and delete button as I am still facing challenges with it.
+I have  implemented the functionality for edit and delete  and complete(tick)button functionality for the list
