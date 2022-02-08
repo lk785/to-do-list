@@ -23,12 +23,12 @@ body {
 .searchBox__container {
   display: inline-flex;
   text-align: center;
-  margin-left: 35%;
+  margin-left: 25%;
   margin-right: 35%;
   margin-top: 10%;
 }
 .searchBox {
-  width: 80%;
+  width: auto;
   font-size: 25px;
   border-radius: 5px;
   border-color: black;
@@ -56,25 +56,27 @@ body {
   transform: scale(0.98);
 }
 
-.note__container {
+/* .note__container {
   display: inline-flex;
   margin-top: 2%;
   margin-left: 35%;
   margin-right: 35%;
   margin-bottom: 5%;
-}
+  list-style: none;
+} */
 
-.notes {
-  /* display: inline-flex; */
-  width: 10rem;
+/* .notes {
+  display: inline-flex;
+  width: 15rem;
   height: auto;
   border: 2px solid black;
   background-color: rgb(209, 209, 243);
   font-size: large;
-  /* margin-top: 4%; */
-  /* margin-left: 35%; */
-  /* margin-right: 20%; */
-}
+
+  margin-top: 4%;
+  margin-left: 35%;
+  margin-right: 20%;
+} */
 .editButton {
   width: auto;
   height: 2rem;
@@ -104,6 +106,7 @@ body {
   border-width: 2px;
   font-size: large;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-right: 25%;
 
   text-decoration: none;
   background-color: rgb(212, 11, 11);
@@ -113,14 +116,64 @@ body {
   outline: none;
   transition: 0.2s all;
 }
+
 .delButton:active {
   transform: scale(0.98);
 }
-.edit__del_btn {
+/* .edit__del_btn {
   display: inline-flex;
 
-  /* margin-left: 17rem;
-  margin-right: 115rem; */
-  /* margin-left: rem;
-  margin-right: 0rem; */
+  margin-left: 17rem;
+  margin-right: 115rem;
+  margin-left: rem;
+  margin-right: 0rem;
+} */
+
+h3 {
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+ul {
+  list-style: none;
+  counter-reset: my-counter;
+}
+ul li {
+  width: 90%;
+  padding: 18px;
+  margin: 5px 0;
+  background: #e96969bb;
+  font-size: 22px;
+  /* counter-increment: my-counter; */
+}
+ul.Completed li {
+  background: #00ff62;
+}
+ul li::before {
+  /* content: counter(my-counter); */
+  background: #231381;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 2rem;
+  text-align: center;
+  color: #fff;
+  margin-right: 0.5rem;
+}
+li button {
+  float: right;
+  padding: 5px;
+  font-size: 28px;
+  line-height: 28px;
+  margin-right: 15px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+ul.not_Complete li {
+  margin: 5px 0;
+  padding: 20px;
 }

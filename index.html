@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>toDoList</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -13,23 +17,23 @@
       <p class="heading">TO DO LIST</p>
       <!-- serach box start -->
       <div class="searchBox__container">
-        <input
-          class="searchBox"
-          id="sBox"
-          type="text"
-          placeholder="search..."
-        />
+        <input class="searchBox" type="text" placeholder="Add here..." />
         <button class="addButton">ADD</button>
-        <!-- <i class="fa fa-search"></i> -->
       </div>
       <!-- serach box end -->
 
       <!-- list start  -->
-      <div class="note__container" id="node__C">
-        <div class="notes">hello how are u</div>
-        <button class="editButton">Edit</button>
-        <button class="delButton">Delete</button>
-      </div>
+
+      <!-- for not complete -->
+      <ul class="not_Complete">
+        <h3>not completed</h3>
+      </ul>
+
+      <!-- for complete -->
+      <ul class="Completed">
+        <h3>Completed</h3>
+      </ul>
+
       <!-- list ends  -->
     </div>
   </body>
