@@ -39,18 +39,3 @@ const addList = function (e) {
 
 addbutton.addEventListener("click", addList);
 
-// for (var i = 0; i < del.length; i++) {
-//   del[i].addEventListener("click", deleteListElement);
-// }
-
-// console.log(inputVal);
-//   list = `
-// <ul class="note__container" id="node__C">
-//       <li>
-//         ${inputVal}
-//         <button class="editButton">Edit</button>
-//         <button class="delButton">Delete</button>
-//       </li>
-//     </ul>`;
-//   searchContainer.insertAdjacentHTML("afterend", list);
-//   document.getElementById("sBox").value = "";
